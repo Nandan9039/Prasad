@@ -21,9 +21,9 @@ pipeline {
    stage('mvnBuild'){
       steps{
       script{
-      sh script: "mvn clean install"
+      sh "mvn clean install"
       sh "ls -ltrs ./target"
-      echo "${version}"
+      
             }
       }
   }
